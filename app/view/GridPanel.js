@@ -172,7 +172,6 @@ Ext.define('App.view.GridPanel', {
 
         for (i = 0; i < combos.length; i++){
             value = Ext.getCmp(combos[i]+me.id).getValue();
-            console.log(value);
             if (!Ext.isEmpty(value)){
                 me.store.filter(combos[i], value, true, false)
             }

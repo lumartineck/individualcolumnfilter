@@ -1,0 +1,1 @@
+Grid filtrado individualmente por columna mediante combos.
