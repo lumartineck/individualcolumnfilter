@@ -168,7 +168,7 @@ Ext.define('App.view.GridPanel', {
     filterStore:function(){
         var me = this, i, value, combos = ['rendering_engine', 'browser', 'platform', 'engine_version', 'css_grade'];
 
-        me.store.clearFilter(true);
+        me.store.clearFilter(false);
 
         for (i = 0; i < combos.length; i++){
             value = Ext.getCmp(combos[i]+me.id).getValue();
@@ -187,7 +187,6 @@ Ext.define('App.view.GridPanel', {
 
         for (i = 0; i < combos.length; i++){
             Ext.getCmp(combos[i]+me.id).reset();
-
         }
     }
 
